@@ -1,0 +1,16 @@
+apiVersion: v2
+type: application
+
+home: https://github.com/topolvm/topolvm
+name: topolvm
+description: Topolvm
+version: 11.0.0
+appVersion: 0.16.0
+sources:
+  - https://github.com/topolvm/topolvm
+
+dependencies:
+  - name: cert-manager
+    repository: https://charts.jetstack.io
+    version: 1.7.0
+    condition: cert-manager.enabled
